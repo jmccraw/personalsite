@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Justin McCraw – Web Developer, Journalist</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <script>
+  (function() {
+    var elementList = ["main", "header", "section", "article"];
+    for (element in elementList) {
+      document.createElement(elementList[element]);
+    }
+  })();
+  </script>
+  <style>
+    main,
+    header,
+    section,
+    article {
+      display: block;
+    }
+
+    ::selection {
+      background: #e54598;
+    }
+
+    ::-moz-selection {
+      background: #e54598;
+    }
+
+    body {
+      margin: 0 auto;
+      padding: 0;
+      background: #051632;
+      background: #01161c;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    section {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100em;
+    }
+
+    h1 {
+      margin: 5% 0 0;
+      font: 400 7em/1 Nord, Tahoma, Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: #59b4d2;
+      color: transparent;
+      text-shadow: 25px -25px 0 transparent;
+    }
+
+    h1::after {
+      content: attr(title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: transparent;
+      font-size: 300%;
+      text-shadow: -5px 25px 0 #fc0d1e;
+      text-shadow: -5px 25px 0 #59b4d2;
+      z-index: -1;
+      opacity: .5;
+    }
+
+    h1 span {
+      display: block;
+      margin: 3% auto 0;
+      font-size: .2em;
+      font-weight: 400;
+      text-shadow: none;
+    }
+
+    p {
+      margin: 8% auto;
+      padding: 0;
+      max-width: 60%;
+      font: 400 1.3em/1.7 Georgia, Times, sans-serif;
+      color: #dfe9ea;
+      font-style: italic;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      max-height: 40em;
+    }
+
+    @media screen and (max-width: 320px) {
+      h1 {
+        margin-top: 7%;
+        font-size: 200%;
+        color: #59b4d2;
+      }
+
+      h1::after {
+        display: none;
+      }
+
+      h1 span {
+        margin: 5% auto 0;
+        font-size: 50%;
+      }
+
+      p {
+        margin: 5% auto;
+        max-width: 80%;
+        font-size: 100%;
+        line-height: 1.5;
+      }
+    }
+
+    @media screen and (min-width: 320.99px) and (max-width: 600px) {
+      h1 {
+        margin-top: 7%;
+        font-size: 360%;
+        color: #59b4d2;
+      }
+
+      h1::after {
+        display: none;
+      }
+
+      h1 span {
+        margin: 8% auto 0;
+        font-size: 40%;
+      }
+
+      p {
+        margin: 7% auto;
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (min-width: 600.99px) and (max-width: 900px) {
+      h1 {
+        font-size: 500%;
+      }
+
+      h1::after {
+        font-size: 330%;
+      }
+
+      h1 span {
+        margin-top: 6.5%;
+        font-size: 30%;
+      }
+
+      p {
+        margin: 6% auto;
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (min-width: 1200.01px) {
+      h1::after {
+        font-size: 380%;
+        text-shadow: 0 0 0 #59b4d2;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main rel="main">
+    <section>
+      <header>
+        <h1 title="Justin McCraw">Justin McCraw<span>Web Developer • Journalist</span></h1>
+      </header>
+      <article>
+        <p>A <strong>Web Developer</strong> with experience editing and designing <strong>Magazines</strong>, I&rsquo;m interested in mobile and tablet spaces and can assist with HTML5, CSS3, JavaScript and Print and Digital Design areas.
+I subscribe to more than 20 print magazines and newspapers and enjoy human-computer interaction, cake baking and farmers markets.</p>
+      </article>
+      <article>
+        <iframe src="https://embed.spotify.com/?uri=spotify:user:justinmccraw:playlist:03KuHaym8o4WQy4u1wnyRo" width="320" height="568" frameborder="0" allowtransparency="true"></iframe>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

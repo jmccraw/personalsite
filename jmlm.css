@@ -1,0 +1,44 @@
+@-webkit-keyframes flashes {
+  0% { background: #000; }
+  100% { background: #fff; }
+}
+@-moz-keyframes flashes {
+  0% { background: #000; }
+  100% { background: #fff; }
+}
+@keyframes flashes {
+  0% { background: #000; }
+  100% { background: #fff; }
+}
+body {
+  -webkit-animation: flashes .4s 0 ease-in-out 1 alternate,
+  flashes .1s .4s ease-in-out 4 alternate,
+  flashes .5s .8s ease-in-out 1 alternate;
+  -moz-animation: flashes .4s 0 ease-in-out 1 alternate,
+  flashes .1s .4s ease-in-out 4 alternate,
+  flashes .5s .8s ease-in-out 1 alternate;
+  animation: flashes .4s 0 ease-in-out 1 alternate,
+  flashes .1s .4s ease-in-out 4 alternate,
+  flashes .5s .8s ease-in-out 1 alternate;
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 0;
+}
+main {
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAHaTzTgAAAAKSURBVHgBY2AAAAACAAFzdQEYAAAAAElFTkSuQmCC);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+  left: 50%;
+  margin: -15rem 0 0 -51.2rem;
+  position: absolute;
+  text-indent: -99999px;
+  top: 50%;
+  transition: background-image 1s ease-out;
+  width: 102.4rem;
+}
+.signature {
+  background-image: url(images/script-name.png);
+}
