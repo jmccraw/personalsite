@@ -4,30 +4,30 @@
 (function() {
   "use strict";
 
-  var transition = "";
+  var animation = "";
 
   /**
-   * Finds the transitionend event to use for this browser
+   * Finds the animationend event to use for this browser
    * Slightly modified from webinista: http://stackoverflow.com/a/9090128/1472477
    */
-  function checkTransitionSupport() {
-    var transitions = {
-      "transition": "transitionend",
-      "WebkitTransition": "webkitTransitionEnd",
-      "OTransition": "otransitionend",
-      "MozTransition": "transitionend"
+  function checkAnimationSupport() {
+    var animations = {
+      "WebkitAnimation": "webkitAnimationEnd",
+      "OAnimation": "oanimationend",
+      "MozAnimation": "mozAnimationEnd",
+      "animation": "animationend"
     };
     var el = document.createElement("div");
 
-    for (var i in transitions) {
-      if (transitions.hasOwnProperty(i) && el.style[i] !== void 0) {
-        transition = transitions[i];
+    for (var a in animations) {
+      if (animations.hasOwnProperty(a) && el.style[a] !== void 0) {
+        animation = animations[a];
         break;
       }
     }
 
-    if (transition === "") {
-      transition = "nosupport";
+    if (animation === "") {
+      animation = "nosupport";
     }
   }
 
@@ -42,11 +42,11 @@
    * Initialize the JavaScript that needs it
    */
   function init() {
-    checkTransitionSupport();
+    checkAnimationSupport();
 
     // add event support for the transition ending
-    if (transition === "nosupport") {
-      document.body.addEventListener(transition, revealSignature, false);
+    if (animation !== "nosupport") {
+      document.body.addEventListener(animation, revealSignature, false);
     }
     else {
       setTimeout(function() {

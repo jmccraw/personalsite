@@ -10,16 +10,51 @@
   0% { background: #000; }
   100% { background: #fff; }
 }
+
+@-webkit-keyframes strobe {
+  0% {
+    background: #000;
+  }
+  30% {
+    background: #fff;
+  }
+  38% {
+    background: #000;
+  }
+  46% {
+    background: #fff;
+  }
+  54% {
+    background: #000;
+  }
+  62% {
+    background: #fff;
+  }
+  70% {
+    background: #000;
+  }
+  100% {
+    background: #fff;
+  }
+
+}
 body {
-  -webkit-animation: flashes .4s 0 ease-in-out 1 alternate,
-  flashes .1s .4s ease-in-out 4 alternate,
-  flashes .5s .8s ease-in-out 1 alternate;
-  -moz-animation: flashes .4s 0 ease-in-out 1 alternate,
-  flashes .1s .4s ease-in-out 4 alternate,
-  flashes .5s .8s ease-in-out 1 alternate;
-  animation: flashes .4s 0 ease-in-out 1 alternate,
-  flashes .1s .4s ease-in-out 4 alternate,
-  flashes .5s .8s ease-in-out 1 alternate;
+  /*-webkit-animation: flashes .4s 0 ease-in-out 1 alternate,*/
+  /*flashes .1s .4s ease-in-out 4 alternate,*/
+  /*flashes .5s .8s ease-in-out 1 alternate;*/
+  /*-moz-animation: flashes .4s 0 ease-in-out 1 alternate,*/
+  /*flashes .1s .4s ease-in-out 4 alternate,*/
+  /*flashes .5s .8s ease-in-out 1 alternate;*/
+  /*animation: flashes .4s 0 ease-in-out 1 alternate,*/
+  /*flashes .1s .4s ease-in-out 4 alternate,*/
+  /*flashes .5s .8s ease-in-out 1 alternate;*/
+
+  -webkit-animation: strobe 1.3s 0 ease-in-out 1 alternate;
+  -moz-animation: strobe 1.3s 0 ease-in-out 1 alternate;
+  -o-animation: strobe 1.3s 0 ease-in-out 1 alternate;
+  animation: strobe 1.3s 0 ease-in-out 1 alternate;
+
+
   font-size: 62.5%;
   margin: 0 auto;
   padding: 0;
