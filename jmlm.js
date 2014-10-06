@@ -14,8 +14,8 @@
     var animations = {
       "WebkitAnimation": "webkitAnimationEnd",
       "OAnimation": "oanimationend",
-      "MozAnimation": "mozAnimationEnd",
-      "animation": "animationend"
+      "animation": "animationend",
+      "MozAnimation": "mozAnimationEnd"
     };
     var el = document.createElement("div");
 
